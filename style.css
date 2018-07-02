@@ -1,0 +1,21 @@
+.message {
+    font-style: lucida;
+    display: block;
+    margin: 40vh auto 40vh auto;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+}
+@media screen and (min-width: 480px) {
+    .message {
+        font-style: lucida;
+        display: block;
+        margin: 43vh auto 43vh auto;
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+.line {
+    color: #0099FF;
+}
