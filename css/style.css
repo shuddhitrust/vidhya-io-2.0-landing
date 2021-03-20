@@ -1,0 +1,62 @@
+:root {
+  --shuddhi-color: #0099ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#logo {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 50vh;
+}
+
+.message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}
+
+#footer {
+  position: absolute;
+  text-align: center;
+  font-size: 1em;
+  bottom: 0px;
+  left: 50%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -10%);
+  -moz-transform: translate(-50%, -10%);
+  -ms-transform: translate(-50%, -10%);
+  -o-transform: translate(-50%, -10%);
+  transform: translate(-50%, -10%);
+}
+
+@media screen and (min-width: 480px) {
+  .message {
+    font-size: 25px;
+  }
+}
+.line {
+  color: var(--shuddhi-color);
+}
+
+@media only screen and (max-width: 850px) {
+  #footer {
+    font-size: 0.8em;
+  }
+}
