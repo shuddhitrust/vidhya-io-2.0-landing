@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="media/favicon.ico" />
     <title>Shuddhi.io</title>
+    <script>
+      const date = new Date();
+      const year = date.getFullYear();
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("current-year").textContent = year;
+      });
+    </script>
   </head>
   <body>
     <div class="container">
       <div class="message">
-        <img id="logo" src="media/images/logo-mini.svg" alt="Shuddhi Logo" />
+        <img id="logo" src="media/images/logo-mini.svg" alt="Siddhitek Logo" />
         <span class="line">
           ___________________________
           <br /><br />
@@ -29,7 +36,7 @@
         /></a>
       </p>
       <smallyle="color: gray"
-        >Copyright &copy; 2021 Shuddhi Trust, All Rights Reserved</small
+        >Copyright &copy; <span id="current-year"></span> Siddhitek, All Rights Reserved</small
       >
       <p></p>
     </div>    
